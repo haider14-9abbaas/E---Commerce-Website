@@ -1,0 +1,458 @@
+/* General CSS */  
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@400;500;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+:root {
+
+    /* Text Colors */
+    --primary-color: #008AFC;
+    --secondary-color: #014EBC;
+    --light-pink-color: #FFFCF8;
+    --light-color: #CCCCCC;
+    --black-color: #000;
+    --white-color: #fff;
+    --box-shadow: 0.1rem -0.07rem 1.5rem 0.3rem rgb(0 0 0 / 26%);
+
+    /* font-family */
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+body,
+html {
+    font-size: 10px !important;
+    font-weight: 400 !important;
+    font-family: var(--primary-font) !important;
+    scroll-behavior: smooth !important;
+    overflow-x: hidden !important;
+    line-height: 1.5 !important;
+}
+
+h1 {
+    color: var(--black-color) !important;
+    font-size: 5.5rem !important;
+    font-weight: 800 !important;
+    font-family: var(--secondary-font) !important;
+    display: inline-block !important;
+    text-transform: uppercase !important;
+    line-height: 1.4 !important;
+    margin-bottom: 2rem !important;
+}
+
+h2 {
+    color: var(--white-color) !important;
+    font-size: 4rem !important ;
+    font-weight: 700 !important ;
+    font-family: var(--secondary-font) !important;
+    display: inline-block !important;
+    text-transform: uppercase !important;
+    line-height: 1.4 !important;
+    margin-bottom: 2rem !important;
+}
+
+h2 span {
+    color: var(--primary-color) !important;
+}
+
+h3 {
+    font-size: 3rem !important;
+    font-weight: 800 !important;
+    line-height: 1.3 !important;
+    font-family: var(--secondary-font) !important;
+    color: var(--white-color);
+    margin-bottom: 1rem !important;
+}
+
+h4 {
+    font-size: 3rem !important;
+    font-weight: 500 !important;
+    line-height: 1 !important;
+    font-family: var(--secondary-font) !important;
+    color: var(--black-color) !important;
+    margin-bottom: 2rem !important;
+}
+
+h5 {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    margin-bottom: 0.9375rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.6rem !important;
+    font-weight: 500 !important;
+    line-height: 1.5 !important;
+    letter-spacing: 1px !important;
+    margin-top: 1rem !important;
+    color: var(--white-color) !important;
+}
+
+a,
+a:focus,
+a:active,
+a:hover,
+.btn:focus{
+    text-decoration: none;
+    box-shadow: none;
+    outline: 0;
+
+}
+.bg-black{
+    color: var(--black-color) !important;
+}
+
+.main-btn {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-radius: 5rem !important;
+    padding: 0.9rem 3rem !important;
+    font-family: var(--secondary-font);
+    font-weight: 500 !important;
+    font-size: 1.5rem !important;
+    margin-top: 1.5rem !important;
+    transition: all .3s linear !important;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+    text-decoration: none;
+}
+.main-btn:hover{
+    color: var(--white-color) !important;
+    background-color: var(--primary-color) !important;
+}
+.view-link{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    color: var(--white-color);
+    transition: all .3s ease-in-out;
+}
+.view-link:hover{
+    color: var(--white-color);
+    font-size: 1.6rem;
+}
+.wrapper{
+    padding: 7rem 0 !important;
+}
+.sec-title h1{
+    position: relative !important;
+}
+.sec-title h1::after{
+    position: absolute !important;
+    content: '';
+    background-color: var(--primary-color) ;
+    width: 50% !important;
+    height: 50% !important;
+    right: -0.4rem !important;
+    bottom: 0% !important;
+    opacity: 0.5 !important;
+
+}
+/* navbar css */
+.header{
+    background-color: var(--black-color);
+    padding: 1rem 0 !important;
+}
+.header .navbar-brand img{
+    width: 20rem !important;
+    height: auto !important;
+    object-fit: cover !important;
+}
+.header .navbar-nav .nav-link{
+    color: var(--white-color);
+    font: var(--secondary-font);
+    text-transform: uppercase;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 2rem !important;
+    margin: 0 0.2rem !important;
+}
+
+/* dropdown menu */
+.header .dropdown-menu{
+    min-width: 13rem !important;
+    padding: 1.5rem !important;
+    background-color:var(--black-color);
+    border: 0.2rem solid var(--primary-color) !important;
+}
+.header .dropdown-item{
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+    color: var(--white-color);
+    font-weight: 600;
+    font-family: var(--secondary-font);
+}
+.header .dropdown-toggle::after{
+    /* content se plus ka sign usjagah ajaiga  */
+    content: '+'; 
+    border: none;           
+    vertical-align: middle;
+    font-size: 1.6rem;             
+
+}
+.header .nav-item:hover > .dropdown-toggle::after,
+.header .nav-link.dropdown-toggle.show{
+    color: var(--primary-color);
+}
+
+.header .dropdown-item:focus,
+.header .dropdown-item:hover,
+.header .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+}
+.header .navbar-nav li:hover>ul.dropdown-menu{
+    display: block;
+}
+
+/* banner ki css */
+.banner-wrapper{
+    margin-top: 8rem;
+    background-image: url('../images/banner/banner.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+}
+
+/* parallex effect  */
+.parallax {
+    position: relative;
+    background-position: left;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax-1 {
+    position: relative;
+    background-position: right;
+    background-size: 48%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax-main {
+    position: relative;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: inline-block;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.parallax.img1 {
+    background-image: url('../images/banner/Banner-1.jpg');
+    height: 100%;
+}
+
+.parallax.img2 {
+    background-image: url('../images/Services/web-designing.webp');
+    height: 608px;
+}
+
+.parallax.img3 {
+    background-image: url('../images/Services/branding.webp');
+    height: 608px;
+}
+
+.parallax.img4 {
+    background-image: url('../images/Services/advertising.webp');
+    height: 608px;
+}
+
+.parallax.img5 {
+    background-image: url('../images/Services/seo.webp');
+    height: 608px;
+}
+
+.main-wrapper{
+    margin-top: 80vh;
+    background-color: var(--white-color);
+    width: 100%;
+}
+.main-wrapper .black-card{
+    position: absolute;
+    top: 25%;
+    left: -400px;
+    width: 80%;
+    box-shadow: var(--box-shadow);
+    background-color: var(--black-color);
+    border-radius: 2rem;
+    padding: 2.5rem;
+    text-align: left;
+    z-index: 1;
+
+}
+.main-wrapper .black-card.right{
+right: -400px;
+left: unset;
+}
+
+/* process css */
+.process-wrapper{
+    background-color: var(--black-color);
+}
+/* .process-wrapper h1,
+.work-wrapper h1{
+    color: var(--white-color) !important;
+} */
+.process-wrapper .process-content{
+    padding: 4rem 6rem;
+    position: relative;
+}
+
+.process-wrapper .process-content::after{
+    position: absolute;
+    content: '';
+    width: 40%;
+    margin: auto;
+    bottom: 0;
+    border: 1px solid var(--white-color);
+ 
+}
+
+/* review card css */
+.testimonial-wrapper .card{
+    border: none;
+    box-shadow: var(--box-shadow);
+    border-radius: 1rem;
+    padding: 4rem 2rem;
+    margin: 2rem;
+
+}
+.testimonial-wrapper .carousel-indicators{
+    margin-bottom: -3rem;
+}
+.testimonial-wrapper .carousel-indicators button{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--black-color);
+}
+.footer_wrapper .footer-logo img {
+    width: 23rem;
+    height: auto;
+    object-fit: cover;
+}
+
+.whatsapp-icon {
+    position: relative;
+}
+
+.whatsapp-icon .whatsapp {
+    position: fixed;
+    width: 6rem;
+    z-index: 1;
+    bottom: 1rem;
+    right: 0.5rem;
+}
+
+/* about page ki css */
+.about .abilities-wrapper ul{
+    list-style: none;
+    padding: 0;
+}
+.about .abilities-wrapper h3{
+    color: var(--black-color);
+}
+.about .abilities-wrapper ul li p{
+    color: var(--black-color) !important;
+}
+
+/* Team CSS */
+.about .team-wrapper .card .team-img {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 0.5rem solid var(--primary-color);
+}
+
+.about .team-wrapper .card .team-img img {
+    border-radius: 50%;
+}
+
+/* portfolio page css */
+.portfolio-services .card-detail{
+box-shadow: var(--box-shadow);
+background-color: var(--black-color);
+border-radius: 2rem;
+padding: 3rem;
+margin-top: -2rem;
+}
+
+.portfolio-services .card-detail h5 {
+    font-family: var(--secondary-font) !important;
+}
+
+/* contact page css */
+
+.contact .get-in-touch .card{
+    background-color: var(--white-color);
+    min-height: 36rem;
+    padding: 3rem;
+    border-radius: 2rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+/* .contact .card i{
+    font-size: 8rem !important; 
+    margin-bottom: 3rem !important;
+
+} */
+
+.contact .card p:last-child {
+    font-family: var(--secondary-font) !important;
+    font-weight: 700 !important;
+}
+.form-section {
+    padding: 10rem;
+    background-color: var(--black-color);
+    box-shadow: var(--box-shadow);
+    border-radius: 2rem;
+}
+.form-section .form-control:focus {
+    box-shadow: none;
+    border-color: 0.1 solid var(--black-color) !important;
+
+}
+
+.form-section textarea {
+    border: 0.2rem solid var(--light-color) !important;
+    font-size: 1.5rem !important;
+    min-height: 18rem !important;
+}
+.form-section input.form-control {
+    height: 4.5rem !important;
+    border: 0.2rem solid var(--light-color) !important;
+    font-size: 1.5rem !important;
+}

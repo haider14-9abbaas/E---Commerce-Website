@@ -1,0 +1,151 @@
+
+/* Media Query 1170px */
+@media (max-width:1199.5px) {
+    /* paralex */
+    .parallax:not(.parallax-main){
+        background-size: 50%;
+    }
+    .main-wrapper .black-card{
+        width: 100%;
+    }
+    /* process */
+    .process-wrapper .process-content {
+        width: 100% !important;
+    }
+    .process-wrapper .process-content {
+        padding: 4rem 1rem;
+    }
+
+    /* contact page */
+    .form-section{
+        padding: 7rem !important;
+    }
+    .contact .get-in-touch .card {
+        padding:2rem 1rem !important;
+    }
+
+
+}
+
+/* Media Query 991px */
+@media (max-width:991.5px) {
+
+    /* 01 Navbar CSS */
+    .header .navbar-collapse {
+        padding: 2rem !important;
+    }
+
+    .header .navbar-nav .nav-link {
+        padding: 0.6rem 0.5rem !important;
+        margin-bottom: 2rem !important;
+
+    }
+
+    /* banner */
+    .banner-wrapper {
+        margin-top: 4rem !important;
+        padding:4rem 2rem !important;
+        min-height:730px !important;
+    }
+    /* card */
+    .main-wrapper .black-card {
+        left: -226px;
+    }    
+    .main-wrapper .black-card.right {
+       right: -226px;
+    }    
+
+    /* Parallax CSS */
+    .parallax-main{
+        background-size:cover;
+    }
+
+    /* contact page */
+    .contact .get-in-touch .card {
+        min-height: 350px !important;
+    }
+    
+
+
+}
+
+/* Media Query 767px */
+@media (max-width:767.5px) {
+
+    /* General CSS */
+    body,
+    html {
+        font-size: 8px !important;
+    }
+     /* banner */
+     .banner-wrapper {
+        min-height:550px !important;
+    }
+    /* card */
+    .main-wrapper .black-card{
+        left: 5% !important;
+        width: 90% !important;
+    }
+    .main-wrapper .black-card.right{
+        left: 5%;
+        right: unset;
+        width: 90%;
+    }
+
+    /* Parallax CSS */ 
+    .parallax:not(.main-parallax) {
+        background-size:cover;
+    }
+    .parallax-1{
+        background-size: cover;
+    }
+
+    /* Contact */
+    .contact .get-in-touch .card {
+        min-height: 310px !important;
+    }
+   
+}
+
+/* Media Query 590px */
+@media (max-width:590px) {
+
+    /* General CSS */
+    body,
+    html {
+        font-size: 7px !important;
+    }
+    .parallax.img2,
+    .parallax.img3,
+    .parallax.img4,
+    .parallax.img5{
+        height: 408px;
+    }
+    .main-wrapper {
+        margin-top: 35vh;
+    }
+
+    /* footer  */
+
+    .link-widget a img{
+        width: 30px;
+        height: 30px;
+    }
+    /* contact page */
+    .form-section {
+        padding: 2rem;
+    }
+    .contact .get-in-touch .card {
+        min-height: 254px !important;
+    }
+}
+
+/* Media Query 380px */
+@media (max-width:390.4px) {
+    h1{
+        font-size: 27px !important;
+    }
+    h2{
+        font-size: 25px !important;
+    }
+}
